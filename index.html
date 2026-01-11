@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu NinoChef - Restaurant Marocain</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="logo">NinoChef</div>
+        <p>Restaurant Marocain - Commandez en ligne !</p>
+    </header>
+
+    <section id="menu">
+        <h2>Entrées</h2>
+        <div class="item">
+            <span>Salade marocaine - 25 DHS</span>
+            <button onclick="ajouterAuPanier('Salade marocaine', 25)">Ajouter au panier</button>
+        </div>
+        <div class="item">
+            <span>Harira - 30 DHS</span>
+            <button onclick="ajouterAuPanier('Harira', 30)">Ajouter au panier</button>
+        </div>
+        <div class="item">
+            <span>Soupe bissara - 20 DHS</span>
+            <button onclick="ajouterAuPanier('Soupe bissara', 20)">Ajouter au panier</button>
+        </div>
+        <div class="item">
+            <span>Briouates (viande) - 35 DHS</span>
+            <button onclick="ajouterAuPanier('Briouates (viande)', 35)">Ajouter au panier</button>
+        </div>
+        <div class="item">
+            <span>Briouates (poulet) - 35 DHS</span>
+            <button onclick="ajouterAuPanier('Briouates (poulet)', 35)">Ajouter au panier</button>
+        </div>
+
+        <h2>Plats principaux</h2>
+        <div class="item">
+            <span>Couscous - 60 DHS</span>
+            <button onclick="ajouterAuPanier('Couscous', 60)">Ajouter au panier</button>
+        </div>
+        <div class="item">
+            <span>Pastilla (poulet) - 70 DHS</span>
+            <button onclick="ajouterAuPanier('Pastilla (poulet)', 70)">Ajouter au panier</button>
+        </div>
+        <div class="item">
+            <span>Pastilla (fruit de mer) - 80 DHS</span>
+            <button onclick="ajouterAuPanier('Pastilla (fruit de mer)', 80)">Ajouter au panier</button>
+        </div>
+        <div class="item">
+            <span>Rfissa poulet - 65 DHS</span>
+            <button onclick="ajouterAuPanier('Rfissa poulet', 65)">Ajouter au panier</button>
+        </div>
+        <div class="item">
+            <span>Tajine (poulet citron) - 55 DHS</span>
+            <button onclick="ajouterAuPanier('Tajine (poulet citron)', 55)">Ajouter au panier</button>
+        </div>
+        <div class="item">
+            <span>Tajine (viande hâchée) - 60 DHS</span>
+            <button onclick="ajouterAuPanier('Tajine (viande hâchée)', 60)">Ajouter au panier</button>
+        </div>
+        <div class="item">
+            <span>Tajine (viande) - 65 DHS</span>
+            <button onclick="ajouterAuPanier('Tajine (viande)', 65)">Ajouter au panier</button>
+        </div>
+
+        <h2>Accompagnements</h2>
+        <div class="item">
+            <span>Pain marocain - 10 DHS</span>
+            <button onclick="ajouterAuPanier('Pain marocain', 10)">Ajouter au panier</button>
+        </div>
+        <div class="item">
+            <span>Citron confit - 15 DHS</span>
+            <button onclick="ajouterAuPanier('Citron confit', 15)">Ajouter au panier</button>
+        </div>
+        <div class="item">
+            <span>Légumes cuits - 12 DHS</span>
+            <button onclick="ajouterAuPanier('Légumes cuits', 12)">Ajouter au panier</button>
+        </div>
+
+        <h2>Desserts</h2>
+        <div class="item">
+            <span>Chebakia - 20 DHS</span>
+            <button onclick="ajouterAuPanier('Chebakia', 20)">Ajouter au panier</button>
+        </div>
+        <div class="item">
+            <span>Ghriba - 18 DHS</span>
+            <button onclick="ajouterAuPanier('Ghriba', 18)">Ajouter au panier</button>
+        </div>
+        <div class="item">
+            <span>Seffa sucrée - 25 DHS</span>
+            <button onclick="ajouterAuPanier('Seffa sucrée', 25)">Ajouter au panier</button>
+        </div>
+        <div class="item">
+            <span>Crème brûlée - 22 DHS</span>
+            <button onclick="ajouterAuPanier('Crème brûlée', 22)">Ajouter au panier</button>
+        </div>
+        <div class="item">
+            <span>Flan caramel - 20 DHS</span>
+            <button onclick="ajouterAuPanier('Flan caramel', 20)">Ajouter au panier</button>
+        </div>
+
+        <h2>Boissons</h2>
+        <div class="item">
+            <span>Thé à la menthe - 10 DHS</span>
+            <button onclick="ajouterAuPanier('Thé à la menthe', 10)">Ajouter au panier</button>
+        </div>
+        <div class="item">
+            <span>Café - 8 DHS</span>
+            <button onclick="ajouterAuPanier('Café', 8)">Ajouter au panier</button>
+        </div>
+        <div class="item">
+            <span>Jus d'orange - 12 DHS</span>
+            <button onclick="ajouterAuPanier('Jus d\'orange', 12)">Ajouter au panier</button>
+        </div>
+        <div class="item">
+            <span>Jus panaché - 15 DHS</span>
+            <button onclick="ajouterAuPanier('Jus panaché', 15)">Ajouter au panier</button>
+        </div>
+        <div class="item">
+            <span>Jus avocat - 18 DHS</span>
+            <button onclick="ajouterAuPanier('Jus avocat', 18)">Ajouter au panier</button>
+        </div>
+        <div class="item">
+            <span>Jus de banane - 14 DHS</span>
+            <button onclick="ajouterAuPanier('Jus de banane', 14)">Ajouter au panier</button>
+        </div>
+        <div class="item">
+            <span>Lben - 10 DHS</span>
+            <button onclick="ajouterAuPanier('Lben', 10)">Ajouter au panier</button>
+        </div>
+        <div class="item">
+            <span>Soda - 8 DHS</span>
+            <button onclick="ajouterAuPanier('Soda', 8)">Ajouter au panier</button>
+        </div>
+        <div class="item">
+            <span>Eau minérale - 6 DHS</span>
+            <button onclick="ajouterAuPanier('Eau minérale', 6)">Ajouter au panier</button>
+        </div>
+    </section>
+
+    <section id="panier">
+        <h2>Votre Panier de Commande</h2>
+        <ul id="liste-panier"></ul>
+        <p>Total : <span id="total">0</span> DHS</p>
+        <button onclick="commander()">Commander maintenant</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 NinoChef - Restaurant Marocain. Tous droits réservés.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
